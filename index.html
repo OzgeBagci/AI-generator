@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>AI Generator</title>
   </head>
@@ -13,10 +14,10 @@
       </header>
 
       <main>
-        <form>
+        <form id="generator-form">
           <input
             type="text"
-            placeholder="Enter the topic of the French poem"
+            placeholder="Enter the topic of the poem"
             autofocus
             required
             autocomplete="off"
@@ -24,11 +25,7 @@
           />
           <input type="submit" class="submit-button" />
         </form>
-        <div class="poem">
-          The poem
-          <br />
-          goes here
-        </div>
+        <div class="poem" id="poem"></div>
       </main>
 
       <footer>
@@ -46,10 +43,10 @@
           target="_blank"
           >hosted on Netlify</a
         >
-        <a>© 2024</a>
+        <span>© 2024</span>
       </footer>
     </div>
 
-    <script src="src/index.js"></script>
+    <script src="src/script.js"></script>
   </body>
 </html>
