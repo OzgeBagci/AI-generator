@@ -1,12 +1,11 @@
-function generatePoem(event) {
+function generateTravel(event) {
   event.preventDefault();
-  new Typewriter("#poem", {
-    strings: "The poem goes here",
+  new Typewriter("#travel", {
+    strings: "Italy is cool",
     autoStart: true,
     delay: 1,
     cursor: "",
   });
 }
-
-let poemFormElement = document.querySelector("#generator-form");
-poemFormElement.addEventListener("submit", generatePoem);
+let travelFormElement = document.querySelector("#travel-generator-form");
+travelFormElement.addEventListener("submit", generateTravel);

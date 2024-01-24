@@ -36,7 +36,7 @@ form {
   margin-bottom: 30px;
 }
 
-.topic {
+.instructions {
   padding: 16px;
   border: 1px solid rgba(39, 33, 66, 0.5);
   width: 80%;
@@ -55,9 +55,16 @@ form {
   font-size: 16px;
   border-radius: 50px;
   padding: 14px 24px;
+  cursor: pointer;
 }
 
-.poem {
+.example {
+  line-height: 1.5;
+  margin-top: 5px;
+  opacity: 0.6;
+  font-size: 12px;
+}
+.travel {
   font-size: 16px;
   background-color: #fff;
   padding: 20px;
