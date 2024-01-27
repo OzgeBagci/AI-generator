@@ -82,7 +82,7 @@ form {
 .hidden {
   display: none;
 }
-#travel strong {
+.travel strong {
   color: #bbab79;
   font-style: italic;
 }
