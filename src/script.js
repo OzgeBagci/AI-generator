@@ -1,5 +1,4 @@
 function displayTravel(response) {
-  console.log("travel generated");
   new Typewriter("#travel", {
     strings: response.data.answer,
     autoStart: true,
@@ -17,12 +16,10 @@ function generateTravel(event) {
     "You are a well traveled individual who loves to share your insites on different travel destinatins. Your mission is to write 2 short paragraphs about traveling to specific locations. Use basic HTML and separate each line with a <br />. Seperate each paragrapgh with a <br />. Do not include a title. Sign the last paragrapgh with 'SheCodes AI' inside a <strong> element at the very bottom and NOT at the beginning and NOT after the text. Make sure to follow user instructions.";
   let prompt = `User instructions: Generate travel information based on ${instructionsInput.value}`;
   let apiURL = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
-  console.log("generating travel");
+  let travelElement = document.querySelector("#travel");
+  travelElement.classList.remove("hidden");
+  travelElement.innerHTML = `<div class="generating">⏳ Generating destination...</div>`;
   axios.get(apiURL).then(displayTravel);
-
-  console.log("Generating travel");
-  console.log(`Promot: ${prompt}`);
-  console.log(`Context: ${context}`);
 }
 
 let travelFormElement = document.querySelector("#travel-generator-form");

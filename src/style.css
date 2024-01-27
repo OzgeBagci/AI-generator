@@ -1,13 +1,9 @@
 body {
-  background-color: #f9f7fe;
+  background: linear-gradient(to top, #fddb92 0%, #d1fdff 100%);
   font-family: Helvetica, Arial, sans-serif;
-}
-
-a {
-  color: #885df1;
-}
-p {
-  color: #272044;
+  background-color: #fcdb93;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .container {
@@ -25,15 +21,26 @@ h1 {
   line-height: 1.5;
   color: #272044;
   text-align: center;
+  margin-left: 10px;
+}
+
+.form-container {
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.402);
+  box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
+  border-radius: 10px;
 }
 
 form {
-  padding: 30px;
-  background-color: white;
-  box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
-  border-radius: 10px;
   display: flex;
-  margin-bottom: 30px;
+  opacity: 0.95;
+}
+
+.example {
+  line-height: 1.5;
+  opacity: 0.6;
+  font-size: 12px;
+  margin-left: 10px;
 }
 
 .instructions {
@@ -44,11 +51,12 @@ form {
   border-radius: 50px;
   line-height: 20px;
   color: #272044;
+  opacity: 0.88;
 }
 
 .submit-button {
   margin-left: 10px;
-  background: #885df1;
+  background: linear-gradient(to top, #c9c493 0%, #d8e5b7 100%);
   color: white;
   border: none;
   width: 150px;
@@ -58,23 +66,53 @@ form {
   cursor: pointer;
 }
 
-.example {
-  line-height: 1.5;
-  margin-top: 5px;
-  opacity: 0.6;
-  font-size: 12px;
-}
 .travel {
   font-size: 16px;
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.7);
   padding: 20px;
   line-height: 2;
-  border-left: 3px solid #885df1;
+  border-left: 4px solid #eddba2;
+  border-radius: 3px;
   box-shadow: 0px 4px 30px 0px rgba(39, 33, 66, 0.03);
+  margin-left: -1px;
+  margin-top: 45px;
+  background-color: rgba(255, 255, 255, 0.53);
 }
 
+.hidden {
+  display: none;
+}
+#travel strong {
+  color: #bbab79;
+  font-style: italic;
+}
 footer {
   text-align: center;
   font-size: 13px;
   margin-top: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+a {
+  color: #a57b20;
+}
+
+p {
+  color: #272044;
+}
+
+.generating {
+  animation: blink-animation 1.22s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
 }
